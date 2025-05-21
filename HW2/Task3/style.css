@@ -1,0 +1,47 @@
+.calendar{
+    width: 1500px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 20px 5px;
+    background-color: green;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.calendar__item{
+    width: 190px;
+    height: 200px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: darkseagreen;
+    padding: 10px;
+    transition: .1s;
+
+}
+.calendar__item:hover{
+    transform: scale(110%);
+    cursor: pointer;
+    transition: .1s;
+}
+.calendar__item h2,
+.calendar__item p {
+    margin: 0;
+
+}
+.calendar__item h2{
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.calendar__item p{
+    font-size: 14px;
+    line-height: 1.2;
+}
