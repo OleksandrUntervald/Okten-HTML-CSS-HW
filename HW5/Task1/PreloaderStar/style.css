@@ -1,0 +1,51 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1210px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0 5px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.star{
+    width: 200px;
+    height: 200px;
+
+}
+.star img{
+    width: 100%;
+    height: 100%;
+    animation: rotateStar ease-in-out 2s infinite;
+}
+
+@keyframes rotateStar {
+    from{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(60deg);
+    }
+    40%{
+        transform: rotate(120deg);
+    }
+    60%{
+        transform: rotate(180deg);
+    }
+    80%{
+        transform: rotate(240deg);
+    }
+    100%{
+        transform: rotate(320deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

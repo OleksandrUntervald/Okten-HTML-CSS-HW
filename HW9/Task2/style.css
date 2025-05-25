@@ -1,0 +1,73 @@
+/* Reset CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+ul, ol {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 3fr 6fr 3fr;
+    grid-template-areas:
+    "header header header"
+    'left-aside main right-aside'
+    'footer footer footer'
+
+}
+.header{
+    grid-area: header;
+    background: #D9D9D9;
+}
+.left__aside{
+    grid-area: left-aside;
+    background: #C0BDBD;
+}
+.main{
+    grid-area: main;
+    background: #A4A4A4;
+}
+.right__aside{
+    grid-area: right-aside;
+    background: #C0BDBD;
+}
+.footer{
+    grid-area: footer;
+    background: #D9D9D9;
+}

@@ -1,0 +1,16 @@
+@media (min-width: 268px) and (max-width: 480px) {
+    .container {
+        padding: 5px;
+        font-size: 18px;
+    }
+    .box__item{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+
+    }
+}

@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1210px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0 5px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background: conic-gradient(
+            red, orange, yellow, green, blue, indigo, violet, red
+    );
+    animation: circleRotate 3s ease-in-out infinite;
+}
+
+@keyframes circleRotate {
+    from{
+        transform: rotate(0deg) scale(1);
+    }
+    20%{
+        transform: rotate(60deg) scale(1.2);
+    }
+    40%{
+        transform: rotate(120deg) scale(1.4);
+    }
+    60%{
+        transform: rotate(180deg) scale(1.6);
+    }
+    80%{
+        transform: rotate(240deg) scale(1.8);
+    }
+    100%{
+        transform: rotate(320deg) scale(2);
+    }
+    to{
+        transform: rotate(360deg) scale(2);
+
+    }
+}
